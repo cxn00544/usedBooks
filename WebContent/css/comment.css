@@ -1,0 +1,96 @@
+
+.comment-table {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-search input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-search button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.comment-pagination button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-pagination button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.comment-pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.comment-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comment-table th {
+  padding: 10px;
+  text-align: left;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+.comment-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.comment-table .edit-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+.comment-table .delete-btn {
+  padding: 5px 10px;
+
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-table .edit-btn:hover,
+.comment-table .delete-btn:hover {
+  opacity: 0.8;
+}

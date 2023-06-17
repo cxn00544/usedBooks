@@ -1,0 +1,259 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: white!important
+    /* text-align: center; */
+
+}
+li{
+    list-style: none;
+}
+.header_nav{
+    width: 100%;
+    height: auto;
+    height: 40px;
+    background-color: black;
+   font-size: 15px;
+
+
+}
+.nav_menus{
+    width: 75%;
+    margin:0 auto;
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+
+    
+}
+.left_menus{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    left:0px;
+}
+.serach_nav{
+   width: 13%;
+    height: 90%;
+   margin-top:2px;
+    background-color:white;
+    margin-right:-300px;
+    color: #6c6c6c;
+    border-radius: 32px;
+    text-align: center;
+    padding-top:8px;
+    font-size: 12px;
+    display:flex;
+    position: relative;
+    
+
+}
+input{
+    border:0;
+    outline: none;
+}
+.serach_nav span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    right:10px;
+    top:8px;
+    background:url(../images/icon/serach.png);
+    background-size: 100% 100%;
+
+}
+#search_text{
+    display: inline;
+    transition: .5s;
+    box-sizing: border-box;
+    width: 230px;
+    height: 100%;
+    border-radius: 24px;
+    padding:5px 10px 10px 5px;
+    background-color: #fff;
+    color: #000;
+    line-height: 29px;
+    
+
+}
+.right_menus{
+    width: 240px;
+    height: 100%;
+    position: relative;
+    right:0px;
+   
+}
+.xaunzedenglu{
+    width: 260px;
+    height: 100%;
+    position: relative;
+    right:0px;
+    top:10px;
+    display: none;
+}
+.nav_menus_ul{
+    width: 100%;
+    display: flex;
+}
+.nav_menus_ul li{
+	width: 120px;
+	position:relative;
+	padding:8px;
+	text-align: center;
+
+}
+.nav_menus_ul li a{
+    text-align: center;
+}
+.nav_menus_ul ul{
+	position:absolute;
+	left: 0;
+	top: 100%;
+	margin:0;
+	padding:0;
+	display: none; 
+	 z-index:999;
+	background-color: black;
+}
+.nav_menus_ul ul li{
+	width: 120px;
+    text-align: center;
+
+}
+.nav_menus_ul li:hover{
+	background-color: #f45b41;
+ 
+}
+
+.nav_menus_ul li:hover>ul{
+	display: block;
+}
+.nav_menus_ul ul a{
+    /* display: inline-block; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.nav_menus_ul span{
+    display:inline-block;
+    width: 25%;
+    height: 20px;
+    margin-right:3px;
+}
+ .my_introduce{
+  
+    background:url(../images/icon/xinxi.png);
+    background-size: 100% 100%;
+} 
+.xinxi{
+   
+   background:url(../images/icon/xiaoxi.png);
+   background-size: 100% 100%;
+}
+.qianbao{
+
+    background:url(../images/icon/qianbao.png);
+    background-size: 100% 100%;
+}
+.shezhi{
+
+    background:url(../images/icon/shezhi.png);
+    background-size: 100% 100%;
+}
+.exit{
+
+    background:url(../images/icon/exit.png);
+    background-size: 100% 100%;
+}
+.header_nav_two{
+    width: 60%;
+    height: 165px;
+    background:url(../images/eveing.jpeg);
+    background-size: 100% 100%;
+    margin:0 auto;
+    position: relative;
+}
+.header_nav_two p{
+    color:white;
+    margin:0 auto;
+    position: absolute;
+    font-size: 24px;
+    left:60%;
+    top:30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header_nav_two span{
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    float: right;
+}
+.view {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  .box2{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(220,220,220);
+    text-align: center;
+}
+.box2_ul{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin:0 auto;
+    justify-content: left;
+    text-align: center;
+}
+.box2_ul a{
+
+    color:#000!important;
+
+}
+.box2_ul li{
+   width: 100px;
+    height: 100%;
+    padding: 6px 0;
+    text-align: center;
+}
+.header_nav_two p{
+    font-size:20px;
+    width: 0;
+   
+    overflow:hidden;
+    height: 28px;
+    padding:0;
+    margin:0;
+    text-align:center;
+    box-sizing:border-box;
+    animation:m 4s steps(10) forwards;
+    
+}
+.wenhao{
+    font-size: 20px;
+    width: 200px;
+    color: white;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    margin-left: 43%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 1.5%;
+    overflow-y: hidden;
+
+}
+@keyframes m{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 300px;
+    }
+}

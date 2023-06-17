@@ -1,0 +1,68 @@
+.header {
+  background-color: #333;
+  height: 80px;
+  line-height: 80px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.menu > li {
+  position: relative; /* 为了让二级菜单相对于父元素定位 */
+  margin-right: 20px;
+}
+
+.menu > li > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%; /* 让二级菜单从父元素底部开始定位 */
+  left: 0;
+  z-index: 1; /* 让二级菜单显示在顶部 */
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border: 1px solid #ccc;
+  display: none; /* 初始状态隐藏二级菜单 */
+}
+
+.submenu li {
+  margin: 0;
+  padding: 0;
+}
+.header_div{
+	width:60%;
+	margin:0 auto;
+	margin:0 auto;
+}
+li{
+list-style: none
+}
+.submenu li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.submenu li:hover {
+  background-color: #007bff; /* 鼠标悬停时改变二级菜单中的 li 背景颜色 */
+}
+
+.menu > li:hover .submenu {
+  display: block; /* 鼠标悬停时显示二级菜单 */
+}
+
+.menu > li:hover {
+  background-color: #555; /* 鼠标悬停时改变一级菜单的背景颜色 */
+}
